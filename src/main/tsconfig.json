@@ -1,12 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2015",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "nodenext",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "../../build/main",
+    "outDir": "../../build/",
     "allowJs": true,
     "noImplicitAny": false,
   },

@@ -18,8 +18,13 @@
     "files": [
         "build/main/**/*",
         {
-            "from": "build/renderer",
-            "to": "renderer",
+            "from": "build/overlay",
+            "to": "overlay",
+            "filter": ["**/*"]
+        },
+        {
+            "from": "build/browser",
+            "to": "browser",
             "filter": ["**/*"]
         },
         {

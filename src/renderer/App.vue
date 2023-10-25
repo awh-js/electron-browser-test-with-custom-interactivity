@@ -1,19 +1,24 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import Test from './components/Test.vue';
 
 window.electronAPI.sendMessage('Hello from App.vue!');
+
+const click = () => {
+  console.log('Click!');
+}
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
+    <img @click="click" src="/vite.svg" class="logo" alt="Vite logo" />
+    <!-- <a href="https://vitejs.dev" target="_blank">
+    </a> -->
+    <!-- <a href="https://vuejs.org/" target="_blank">
       <img src="/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    </a> -->
   </div>
-  <HelloWorld msg="Vite + Vue" />
+
+  <Test/>
 </template>
 
 <style scoped>
@@ -22,6 +27,7 @@ window.electronAPI.sendMessage('Hello from App.vue!');
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
+  pointer-events: auto;
 }
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);

@@ -2,6 +2,6 @@ import { createApp } from 'vue'
 import './style.css';
 import App from './App.vue'
 
-const app = createApp(App);
+const app = createApp({ ...App, name: 'overlay' });
 
 app.mount('#onlyMonsterOverlayRoot');

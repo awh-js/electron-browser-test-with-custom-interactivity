@@ -19,12 +19,17 @@
     "@vitejs/plugin-vue": "^4.0.0",
     "chalk": "^4.1.2",
     "chokidar": "^3.5.3",
-    "electron": "^25.2.0",
-    "electron-builder": "^24.2.1",
+    "electron": "^27.0.2",
+    "electron-builder": "^24.6.4",
+    "electron-devtools-assembler": "github:xupea/electron-devtools-installer",
+    "less": "^4.2.0",
     "typescript": "^4.8.4",
-    "vite": "^4.1.1"
+    "vite": "^4.1.1",
+    "vite-plugin-css-injected-by-js": "^3.3.0"
   },
   "dependencies": {
-    "vue": "^3.2.47"
+    "oh-vue-icons": "^1.0.0-rc3",
+    "vue": "^3.2.47",
+    "vuedraggable": "^4.1.0"
   }
 }
